@@ -1,0 +1,81 @@
+---
+import Section from './Section.astro';
+---
+
+<Section>
+	<div
+		class="content prose mt-8 max-w-none text-base leading-8 text-black dark:prose-invert prose-code:rounded-lg prose-code:bg-stone-800 prose-code:p-1 prose-code:text-orange-600 prose-img:rounded-lg prose-img:shadow-xl dark:text-white prose-img:dark:shadow-stone-800"
+	>
+		<slot />
+	</div>
+</Section>
+
+<style is:global>
+	.content pre {
+		background-color: #cdc8ff0d;
+		border-radius: 0.5rem;
+		font-size: 0.9rem;
+	}
+
+	.content code {
+		overflow-x: auto;
+	}
+
+	.content [data-rehype-pretty-code-figure] code {
+		padding: 0 !important;
+	}
+	.content pre > code span[data-line] {
+		border-left: 0.5rem solid transparent;
+		padding: 0 0.5rem;
+	}
+
+	.content pre > code span:first-of-type {
+		border-top-left-radius: 0.5rem;
+		border-top-right-radius: 0.5rem;
+		padding-top: 0.5rem;
+	}
+	.content pre > code span:last-of-type {
+		border-bottom-left-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+		padding-bottom: 0.5rem;
+	}
+
+	.content pre > code .highlighted {
+		border-left: 0.5rem solid rgba(209, 213, 219, 0.6) !important;
+		background-color: rgba(229, 231, 235, 0.05);
+	}
+	/** 
+     *  data-line-numbers will be enabled on markdown  
+     *  with `showLineNumbers` meta string on it
+     */
+	.content pre > code[data-line-numbers] {
+		counter-reset: line;
+	}
+	.content pre > code[data-line-numbers] > span[data-line]::before {
+		counter-increment: line;
+		content: counter(line);
+		display: inline-block;
+		margin-right: 2rem;
+		width: 1rem;
+		text-align: left;
+		color: #7ca2dfad;
+	}
+	.content pre > code > span[data-line]::before {
+		content: '';
+		display: inline-block;
+		width: 1rem;
+		text-align: right;
+	}
+
+	/** 
+     *  we'll need to adjust the space required 
+     *  the number depending on the number of digits 
+     */
+	.content pre > code[data-line-numbers-max-digits='2'] > span[data-line]::before {
+		width: 2rem;
+	}
+
+	.content code[data-line-numbers-max-digits='3'] > span[data-line]::before {
+		width: 3rem;
+	}
+</style>

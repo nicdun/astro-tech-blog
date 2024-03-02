@@ -1,0 +1,23 @@
+{
+	"extends": ["config:base", ":dependencyDashboard", ":prHourlyLimitNone"],
+	"schedule": ["after 6pm"],
+	"packageRules": [
+		{
+			"matchUpdateTypes": ["minor", "patch"],
+			"schedule": ["after 6pm"],
+			"automerge": true,
+			"platformAutomerge": true,
+			"labels": ["minor", "patch"],
+			"requiredStatusChecks": null
+		},
+		{
+			"matchPackageNames": ["astro"],
+			"matchPackagePatterns": ["^@astrojs/"],
+			"matchUpdateTypes": ["major"],
+			"schedule": ["after 6pm"],
+			"labels": ["astro", "major"],
+			"automerge": false,
+			"requiredStatusChecks": null
+		}
+	]
+}

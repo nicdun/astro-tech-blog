@@ -1,0 +1,52 @@
+---
+import Section from '@/components/Section.astro';
+import Card from '@/components/Card.astro';
+import Base from '@/layouts/Base.astro';
+import Heading from '@/components/Heading.astro';
+import { AppConfig } from '@/utils/AppConfig';
+import { MarkdownInstance } from 'astro/dist/@types/astro';
+
+export async function getStaticPaths(): Promise<any> {
+	const allPosts = await Astro.glob('../posts/*.md');
+
+	const allTags: Set<string> = new Set(
+		allPosts.map((post: MarkdownInstance<Record<string, any>>) => post.frontmatter.tags).flat()
+	);
+
+	return [...allTags].map((tag) => ({
+		params: { tag: tag },
+		props: {
+			posts: allPosts.filter((post: MarkdownInstance<Record<string, any>>) =>
+				post.frontmatter.tags.includes(tag)
+			)
+		}
+	}));
+}
+
+interface Props {
+	posts: MarkdownInstance<Record<string, any>>[];
+}
+
+const { tag } = Astro.params;
+const title = AppConfig.title;
+const description = AppConfig.description;
+
+const { posts } = Astro.props;
+---
+
+<Base head={{ title, description }}>
+	<Section>
+		<Heading title={`Posts with #${tag}`} />
+	</Section>
+	<Section>
+		{
+			posts
+				.filter((post: any) => post.frontmatter.tags?.includes(tag))
+				.map((post: any) => (
+					<div class="mb-4 basis-1 last:mb-0">
+						<Card post={post} />
+					</div>
+				))
+		}
+	</Section>
+</Base>

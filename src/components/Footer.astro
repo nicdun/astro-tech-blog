@@ -1,0 +1,12 @@
+---
+import Section from './Section.astro';
+
+const year = new Date();
+---
+
+<Section>
+	<footer class="text-center">
+		© {year.getFullYear()} - <a class="underline hover:text-orange-600" href="/imprint/">Imprint</a> - made with
+		♥️ by Nicolas Dunke
+	</footer>
+</Section>

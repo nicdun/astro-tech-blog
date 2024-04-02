@@ -1,6 +1,6 @@
 # Astro & Tailwind CSS Starter Kit
 
-## Features
+## 🔥 Features
 
 Explore the Astro.js Personal Blog Template – a sleek and feature-rich platform for your personal blog:
 
@@ -15,11 +15,11 @@ Explore the Astro.js Personal Blog Template – a sleek and feature-rich platfor
 
 Unlock a seamless blend of aesthetics and functionality to share your unique voice with the world.
 
-## Showcase
+## 💻 Showcase
 
 ![showcase](/public/showcase.png 'AstroPress - Tech Blog Template')
 
-## Template Integrations
+## 📦 Template Integrations
 
 - @astrojs/tailwind - https://docs.astro.build/en/guides/integrations-guide/tailwind/
 - @astrojs/react - https://docs.astro.build/en/guides/integrations-guide/react/
@@ -28,7 +28,7 @@ Unlock a seamless blend of aesthetics and functionality to share your unique voi
 - @vercel/analytics - https://vercel.com/docs/analytics/
 - rehype-pretty-code - https://rehype-pretty-code.netlify.app/
 
-## Template Structure
+## 🏛️ Template Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
@@ -47,7 +47,7 @@ There's nothing special about `src/components/`, but that's where we like to put
 
 Any static assets, like images, can be placed in the `public/` directory.
 
-## Commands
+## 🚀 Getting started
 
 All commands are run from the root of the project, from a terminal:
 
@@ -60,6 +60,15 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro --help` | Get help using the Astro CLI                     |
 
-## Want to learn more?
 
-Feel free to check Astros [documentation](https://docs.astro.build)
+## ❤️ Helping out
+
+If you find that something isn't working right then I'm always happy to hear it to improve this starter! You can contribute in many ways and forms. Let me know by either:
+
+1. [Filing an issue](https://github.com/nicdun/astro-tech-blog/issues)
+2. [Submitting a pull request](https://github.com/nicdun/astro-tech-blog/pulls)
+3. [Starting a discussion](https://github.com/nicdun/astro-tech-blog/discussions)
+4. [Buying me a coffee!](https://www.buymeacoffee.com/nicdun)
+
+## ☕ Thank you!
+A big thank you to the creators of the awesome Astro static site generator and to all using this starter to make the web a bit more accessible for all people around the world :)

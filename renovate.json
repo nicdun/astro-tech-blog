@@ -1,6 +1,16 @@
 {
-	"extends": ["config:base", ":dependencyDashboard", ":prHourlyLimitNone"],
-	"schedule": ["after 6pm"],
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"configMigration": true,
+	"extends": [
+		"config:best-practices",
+		":dependencyDashboard",
+		":prHourlyLimitNone",
+		":separateMultipleMajorReleases",
+		":automergeMinor",
+		":automergePr",
+		":combinePatchMinorReleases",
+		":rebaseStalePrs"
+	],
 	"packageRules": [
 		{
 			"matchUpdateTypes": ["minor", "patch"],

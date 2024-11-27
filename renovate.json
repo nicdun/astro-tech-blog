@@ -18,16 +18,15 @@
 			"automerge": true,
 			"platformAutomerge": true,
 			"labels": ["minor", "patch"],
-			"requiredStatusChecks": null
+			"ignoreTests": true
 		},
 		{
-			"matchPackageNames": ["astro"],
-			"matchPackagePatterns": ["^@astrojs/"],
+			"matchPackageNames": ["astro", "/^@astrojs//"],
 			"matchUpdateTypes": ["major"],
 			"schedule": ["after 6pm"],
 			"labels": ["astro", "major"],
 			"automerge": false,
-			"requiredStatusChecks": null
+			"ignoreTests": true
 		}
 	]
 }

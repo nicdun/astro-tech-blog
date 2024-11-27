@@ -14,7 +14,6 @@
 	"packageRules": [
 		{
 			"matchUpdateTypes": ["minor", "patch"],
-			"schedule": ["after 6pm"],
 			"automerge": true,
 			"platformAutomerge": true,
 			"labels": ["minor", "patch"],

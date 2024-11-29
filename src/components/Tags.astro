@@ -12,7 +12,7 @@ const { tags, withHref } = Astro.props;
 <div class="flex flex-wrap">
 	{
 		tags.map((tag: string) => {
-			const element = <Tag tag={tag} />;
+			const element = <Tag tag={tag} withHref={withHref} />;
 			return withHref ? <a href={`/tags/${tag}`}>{element}</a> : element;
 		})
 	}

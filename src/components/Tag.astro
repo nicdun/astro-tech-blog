@@ -1,13 +1,16 @@
 ---
 interface Props {
 	tag: string;
+	withHref?: boolean;
 }
 
-const { tag } = Astro.props;
+const { tag, withHref } = Astro.props;
 ---
 
 <span
-	class="mb-2 mr-2 rounded-xl bg-stone-600 px-3 py-1 text-xs font-bold uppercase text-white hover:bg-stone-500 group-hover:bg-stone-500"
+	class={`mb-2 mr-2 rounded-xl bg-stone-600 px-3 py-1 text-xs font-bold uppercase text-white group-hover:bg-stone-500 ${
+		withHref ? 'hover:bg-stone-500' : ''
+	}`}
 >
 	#{tag}
 </span>

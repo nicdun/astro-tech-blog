@@ -23,9 +23,12 @@ const {
 		<meta name="description" content={description} />
 		<meta name="author" content={AppConfig.author} />
 
-    <link rel="sitemap" href="/sitemap-index.xml" />
+		<link rel="sitemap" href="/sitemap-index.xml" />
 		<link rel="alternate" type="application/rss+xml" href="/rss.xml" />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>">
+		<link
+			rel="icon"
+			href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>"
+		/>
 
 		<script>
 			if (
@@ -48,7 +51,21 @@ const {
 		<div class="flex-1">
 			<slot />
 		</div>
+		<div class="flex w-screen flex-row justify-center">
+			<a
+				href="https://3474070726452.gumroad.com/l/astro-resume-01"
+				class="z-100 border-input bottom-25 fixed inline-flex flex-row items-center gap-x-3 rounded-3xl border bg-stone-900 px-10 py-2 text-sm text-stone-100 shadow-sm transition-all hover:scale-105 dark:bg-stone-100 dark:text-stone-900"
+			>
+				<span class="relative flex items-center justify-center">
+					<span
+						class="absolute inline-flex h-2 w-2 animate-ping rounded-full border border-stone-900 bg-stone-900 opacity-75"
+					></span>
+					<span class="relative inline-flex h-2 w-2 rounded-full bg-stone-900"></span>
+				</span>
 
+				<p class="text-lg font-bold">see other templates 🚀</p>
+			</a>
+		</div>
 		<Footer />
 	</body>
 </html>

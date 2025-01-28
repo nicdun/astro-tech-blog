@@ -4,10 +4,12 @@ import Card from '@/components/Card.astro';
 import Base from '@/layouts/Base.astro';
 import Heading from '@/components/Heading.astro';
 import { AppConfig } from '@/utils/AppConfig';
-import { MarkdownInstance } from 'astro/dist/@types/astro';
+import { MarkdownInstance } from 'astro';
 
 export async function getStaticPaths(): Promise<any> {
-	const allPosts = await Astro.glob('../posts/*.md');
+	const allPosts = Object.values(
+		import.meta.glob('../posts/*.md', { eager: true })
+	) as MarkdownInstance<any>[];
 
 	const allTags: Set<string> = new Set(
 		allPosts.map((post: MarkdownInstance<Record<string, any>>) => post.frontmatter.tags).flat()

@@ -5,11 +5,14 @@ import Section from '@/components/Section.astro';
 import Card from '@/components/Card.astro';
 import Heading from '@/components/Heading.astro';
 import { sortPostsByDate } from '@/utils/data.util';
+import { MarkdownInstance } from 'astro';
 
 const { title } = AppConfig;
 const { description } = AppConfig;
 
-const allPosts = await Astro.glob('./*.md');
+const allPosts = Object.values(
+	import.meta.glob('./posts/*.md', { eager: true })
+) as MarkdownInstance<any>[];
 allPosts.sort(sortPostsByDate);
 ---
 

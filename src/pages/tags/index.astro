@@ -4,12 +4,14 @@ import Section from '@/components/Section.astro';
 import Tag from '@/components/Tag.astro';
 import Base from '@/layouts/Base.astro';
 import { AppConfig } from '@/utils/AppConfig';
+import { MarkdownInstance } from 'astro';
 
 const { title } = AppConfig;
 const { description } = AppConfig;
 
-const allPosts = await Astro.glob('../posts/*.md');
-
+const allPosts = Object.values(
+	import.meta.glob('../posts/*.md', { eager: true })
+) as MarkdownInstance<any>[];
 const allTags = allPosts.map((post) => post.frontmatter.tags).flat();
 const uniqueTags: Set<string> = new Set(allTags);
 let tagMap: Record<string, number> = {};

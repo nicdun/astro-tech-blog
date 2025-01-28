@@ -4,7 +4,7 @@
 
 Explore the Astro.js Personal Blog Template – a sleek and feature-rich platform for your personal blog:
 
-- **Astro.js Powered**: Dynamic and efficient JavaScript-driven experience.
+- **Astro.js v5 Powered**: Dynamic and efficient JavaScript-driven experience.
 - **Tailwind CSS Integration**: Ensures a stylish and responsive design.
 - **RSS Feed Support**: Keeps your audience updated effortlessly.
 - **Markdown Compatibility**: Streamlines content creation with easy formatting.

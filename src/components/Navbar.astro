@@ -6,8 +6,8 @@ import Section from './Section.astro';
 	<div class="flex justify-between">
 		<div class="text-3xl font-bold">
 			<a href="/"
-				>💻 <span class="pr-2 text-2xl text-gray-500">{'<'}</span>astro<span
-					class="text-orange-600">.</span
+				>💻 <span class="pr-2 text-2xl text-gray-500">{'<'}</span>astro<span class="text-orange-600"
+					>.</span
 				>js<span class="pl-2 text-2xl text-gray-500">{'/>'}</span></a
 			>
 		</div>
@@ -50,7 +50,7 @@ import Section from './Section.astro';
 	const lightSwitches = document.querySelectorAll('.light-switch');
 	if (lightSwitches.length > 0) {
 		lightSwitches.forEach((lightSwitch: any, i) => {
-			if (localStorage.getItem('dark-mode') === 'true') {
+			if (localStorage.getItem('theme') === 'dark') {
 				lightSwitch.checked = true;
 			}
 			lightSwitch.addEventListener('click', () => {
@@ -62,10 +62,10 @@ import Section from './Section.astro';
 				});
 				if (lightSwitch.checked) {
 					document.documentElement.classList.add('dark');
-					localStorage.setItem('dark-mode', 'true');
+					localStorage.setItem('theme', 'dark');
 				} else {
 					document.documentElement.classList.remove('dark');
-					localStorage.setItem('dark-mode', 'false');
+					localStorage.setItem('theme', 'light');
 				}
 			});
 		});

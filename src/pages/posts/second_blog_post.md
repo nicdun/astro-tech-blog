@@ -122,7 +122,7 @@ Some text to show that the reference links can follow later.
 Images included in _\_posts_ folder are lazy loaded.
 
 Inline-style:
-![alt text](/src/images/random.jpeg "Logo Title Text 1")
+![alt text](/images/random.jpg "Logo Title Text 1")
 
 ## Table
 

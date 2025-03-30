@@ -11,7 +11,7 @@ const { title } = AppConfig;
 const { description } = AppConfig;
 
 const allPosts = Object.values(
-	import.meta.glob('./posts/*.md', { eager: true })
+	import.meta.glob('./*.md', { eager: true })
 ) as MarkdownInstance<any>[];
 allPosts.sort(sortPostsByDate);
 ---

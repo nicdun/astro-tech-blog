@@ -5,6 +5,7 @@ import Base from '@/layouts/Base.astro';
 import Heading from '@/components/Heading.astro';
 import { AppConfig } from '@/utils/AppConfig';
 import { MarkdownInstance } from 'astro';
+import { sortPostsByDate } from '@/utils/data.util';
 
 export async function getStaticPaths(): Promise<any> {
 	const allPosts = Object.values(
@@ -15,14 +16,21 @@ export async function getStaticPaths(): Promise<any> {
 		allPosts.map((post: MarkdownInstance<Record<string, any>>) => post.frontmatter.tags).flat()
 	);
 
-	return [...allTags].map((tag) => ({
-		params: { tag: tag },
-		props: {
-			posts: allPosts.filter((post: MarkdownInstance<Record<string, any>>) =>
-				post.frontmatter.tags.includes(tag)
-			)
-		}
-	}));
+	return [...allTags].map((tag) => {
+		const filteredPosts = allPosts.filter((post: MarkdownInstance<Record<string, any>>) =>
+			post.frontmatter.tags.includes(tag)
+		);
+
+		// Sort posts by pinned status and date
+		filteredPosts.sort(sortPostsByDate);
+
+		return {
+			params: { tag: tag },
+			props: {
+				posts: filteredPosts
+			}
+		};
+	});
 }
 
 interface Props {

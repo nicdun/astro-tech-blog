@@ -17,9 +17,9 @@ const { frontmatter } = Astro.props;
 			tags={frontmatter.tags}
 			minutesRead={frontmatter.minutesRead}
 			pubDate={frontmatter.pubDate}
+			isPinned={frontmatter.isPinned}
 			img={{ src: frontmatter.image.src, alt: frontmatter.image.alt }}
 		/>
 		<PostContent><slot /></PostContent>
 	</div>
 </Base>
-

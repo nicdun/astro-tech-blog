@@ -1,11 +1,14 @@
 ---
 import { formatDate } from '@/utils/data.util';
 import Tags from './Tags.astro';
+import PinnedBadge from './PinnedBadge.astro';
+
 interface Props {
 	post: any;
 }
 
 const { post } = Astro.props;
+const isPinned = post.frontmatter.isPinned === true;
 ---
 
 <a href={post.url}>
@@ -17,7 +20,10 @@ const { post } = Astro.props;
 		>
 			<div class="flex-auto">
 				<div class="flex justify-between pb-4 text-xs">
-					<p>{formatDate(post.frontmatter.pubDate)}</p>
+					<div class="flex items-center gap-2">
+						{isPinned && <PinnedBadge size="sm" />}
+						<p>{formatDate(post.frontmatter.pubDate)}</p>
+					</div>
 					<p>{post.frontmatter.minutesRead}</p>
 				</div>
 

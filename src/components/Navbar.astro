@@ -102,25 +102,33 @@ import Section from './Section.astro';
 <script>
 	// Theme switching functionality
 	const lightSwitches = document.querySelectorAll('.light-switch');
+
+	function applyTheme(isDark: boolean) {
+		if (isDark) {
+			document.documentElement.classList.add('dark');
+			localStorage.setItem('theme', 'dark');
+		} else {
+			document.documentElement.classList.remove('dark');
+			localStorage.setItem('theme', 'light');
+		}
+	}
+
 	if (lightSwitches.length > 0) {
-		lightSwitches.forEach((lightSwitch: any, i) => {
-			if (localStorage.getItem('theme') === 'dark') {
-				lightSwitch.checked = true;
-			}
-			lightSwitch.addEventListener('click', () => {
-				const { checked } = lightSwitch;
-				lightSwitches.forEach((el: any, n) => {
-					if (n !== i) {
-						el.checked = checked;
-					}
-				});
-				if (lightSwitch.checked) {
-					document.documentElement.classList.add('dark');
-					localStorage.setItem('theme', 'dark');
-				} else {
-					document.documentElement.classList.remove('dark');
-					localStorage.setItem('theme', 'light');
-				}
+		// Initialize theme based on localStorage
+		const isDarkTheme = localStorage.getItem('theme') === 'dark';
+		applyTheme(isDarkTheme);
+
+		// Set initial state of switches
+		lightSwitches.forEach((lightSwitch) => {
+			(lightSwitch as HTMLInputElement).checked = isDarkTheme;
+		});
+
+		// Add click event listeners
+		lightSwitches.forEach((lightSwitch) => {
+			(lightSwitch as HTMLInputElement).addEventListener('click', () => {
+				const isChecked = (lightSwitch as HTMLInputElement).checked;
+				// Apply theme
+				applyTheme(isChecked);
 			});
 		});
 	}

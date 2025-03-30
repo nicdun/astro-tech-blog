@@ -70,5 +70,7 @@ If you find that something isn't working right then I'm always happy to hear it 
 3. [Starting a discussion](https://github.com/nicdun/astro-tech-blog/discussions)
 4. [Buying me a coffee!](https://www.buymeacoffee.com/nicdun)
 
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/nicdun)
+
 ## ☕ Thank you!
 A big thank you to the creators of the awesome Astro static site generator and to all using this starter to make the web a bit more accessible for all people around the world :)

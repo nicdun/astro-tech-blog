@@ -19,12 +19,14 @@ const isPinned = post.frontmatter.isPinned === true;
 			class="flex h-full w-full flex-col rounded-[1rem] bg-stone-300 p-4 text-gray-900 opacity-90 dark:bg-stone-800 dark:text-white"
 		>
 			<div class="flex-auto">
-				<div class="flex justify-between pb-4 text-xs">
+				<div class="flex flex-col justify-between gap-2 pb-4 text-xs">
 					<div class="flex items-center gap-2">
 						{isPinned && <PinnedBadge size="sm" />}
 						<p>{formatDate(post.frontmatter.pubDate)}</p>
 					</div>
-					<p>{post.frontmatter.minutesRead}</p>
+					<div>
+						<p class="font-bold">{post.frontmatter.minutesRead}</p>
+					</div>
 				</div>
 
 				<p class="pb-4 text-lg font-bold">{post.frontmatter.title}</p>

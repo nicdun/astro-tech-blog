@@ -19,7 +19,7 @@
 		"@types/react": "19.2.2",
 		"@types/react-dom": "19.2.2",
 		"@vercel/analytics": "1.5.0",
-		"astro": "5.15.2",
+		"astro": "5.15.3",
 		"canvas-confetti": "1.9.4",
 		"mdast-util-to-string": "4.0.0",
 		"react": "19.2.0",

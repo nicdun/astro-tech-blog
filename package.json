@@ -16,7 +16,7 @@
 		"@astrojs/sitemap": "3.6.0",
 		"@astrojs/vercel": "8.2.11",
 		"@tailwindcss/vite": "4.1.17",
-		"@types/react": "19.2.4",
+		"@types/react": "19.2.5",
 		"@types/react-dom": "19.2.3",
 		"@vercel/analytics": "1.5.0",
 		"astro": "5.15.7",

@@ -18,7 +18,7 @@
 		"@tailwindcss/vite": "4.1.17",
 		"@types/react": "19.2.7",
 		"@types/react-dom": "19.2.3",
-		"@vercel/analytics": "1.5.0",
+		"@vercel/analytics": "1.6.0",
 		"astro": "5.16.3",
 		"canvas-confetti": "1.9.4",
 		"mdast-util-to-string": "4.0.0",

@@ -1,34 +1,5 @@
-# Astro & Tailwind CSS Starter Kit
+https://techblog-steel.vercel.app/
 
-## 🔥 Features
-
-Explore the Astro.js Personal Blog Template – a sleek and feature-rich platform for your personal blog:
-
-- **Astro.js v5 Powered**: Dynamic and efficient JavaScript-driven experience.
-- **Tailwind CSS Integration**: Ensures a stylish and responsive design.
-- **RSS Feed Support**: Keeps your audience updated effortlessly.
-- **Markdown Compatibility**: Streamlines content creation with easy formatting.
-- **Syntax Highlighting**: Enhances code snippet readability for tech enthusiasts.
-- **SEO-Optimized**: Includes a sitemap for optimal search engine visibility.
-- **Vercel Deployment:** preconfigured Vercel deployment & web analytics.
-- **Framework of your choice:** 100% Astro.js only template - choose your JS Framework (react preinstalled)
-
-Unlock a seamless blend of aesthetics and functionality to share your unique voice with the world.
-
-## 💻 Showcase
-
-![showcase](/public/showcase.png 'AstroPress - Tech Blog Template')
-
-## 📦 Template Integrations
-
-- @astrojs/tailwind - https://docs.astro.build/en/guides/integrations-guide/tailwind/
-- @astrojs/react - https://docs.astro.build/en/guides/integrations-guide/react/
-- @astrojs/sitemap - https://docs.astro.build/en/guides/integrations-guide/sitemap/
-- @astrojs/rss - https://docs.astro.build/en/guides/rss/
-- @vercel/analytics - https://vercel.com/docs/analytics/
-- rehype-pretty-code - https://rehype-pretty-code.netlify.app/
-
-## 🏛️ Template Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
@@ -60,15 +31,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`    | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro --help` | Get help using the Astro CLI                     |
 
-
-## ❤️ Helping out
-
-If you find that something isn't working right then I'm always happy to hear it to improve this starter! You can contribute in many ways and forms. Let me know by either:
-
-1. [Filing an issue](https://github.com/nicdun/astro-tech-blog/issues)
-2. [Submitting a pull request](https://github.com/nicdun/astro-tech-blog/pulls)
-3. [Starting a discussion](https://github.com/nicdun/astro-tech-blog/discussions)
-4. [Buying me a coffee!](https://www.buymeacoffee.com/nicdun)
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/nicdun)
 

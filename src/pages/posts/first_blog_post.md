@@ -3,7 +3,6 @@ layout: ../../layouts/post.astro
 title: "The Faux Social Media"
 pubDate: 2024-12-22
 description: "Exploring how social media affects mental health, authenticity, and the way we perceive ourselves and others."
-author: "Nishitha Daryn"
 isPinned: true
 excerpt: "Welcome to the era where truth and fiction dance on a razor-thin edge. Social media can seriously harm mental health, but only if you let it."
 image:

@@ -10,10 +10,10 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/check": "0.9.6",
+		"@astrojs/check": "0.9.7",
 		"@astrojs/react": "4.4.2",
-		"@astrojs/rss": "4.0.15",
-		"@astrojs/sitemap": "3.7.0",
+		"@astrojs/rss": "4.0.16",
+		"@astrojs/sitemap": "3.7.1",
 		"@astrojs/vercel": "9.0.4",
 		"@tailwindcss/vite": "4.2.1",
 		"@types/react": "19.2.14",

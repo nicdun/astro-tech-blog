@@ -15,7 +15,7 @@
 		"@astrojs/rss": "4.0.18",
 		"@astrojs/sitemap": "3.7.2",
 		"@astrojs/vercel": "9.0.5",
-		"@tailwindcss/vite": "4.2.3",
+		"@tailwindcss/vite": "4.2.4",
 		"@types/react": "19.2.14",
 		"@types/react-dom": "19.2.3",
 		"@vercel/analytics": "1.6.1",
@@ -26,7 +26,7 @@
 		"react-dom": "19.2.5",
 		"reading-time": "1.5.0",
 		"rehype-pretty-code": "0.14.3",
-		"tailwindcss": "4.2.3",
+		"tailwindcss": "4.2.4",
 		"typescript": "5.9.3"
 	},
 	"devDependencies": {

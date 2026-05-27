@@ -1,0 +1,17 @@
+
+> vigorous-virgo@0.0.1 dev
+> astro dev
+
+[vite] connected.
+12:08:23 [types] Generated 1ms
+12:08:23 [vite] Re-optimizing dependencies because vite config has changed
+ astro  v6.3.8 ready in 2102 ms
+┃ Local    http://localhost:4321/
+┃ Network  use --host to expose
+12:08:23 watching for file changes...
+12:09:26 [200] / 69ms
+12:10:26 [200] / 15ms
+12:10:28 [200] /posts/first_blog_post 44ms
+12:11:16 [200] / 23ms
+12:11:19 [200] /posts/first_blog_post 7ms
+12:11:21 [200] / 10ms

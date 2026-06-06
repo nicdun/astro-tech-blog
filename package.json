@@ -10,29 +10,30 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/check": "0.9.9",
-		"@astrojs/react": "4.4.2",
+		"@astrojs/react": "5.0.6",
 		"@astrojs/rss": "4.0.18",
 		"@astrojs/sitemap": "3.7.3",
-		"@astrojs/vercel": "9.0.5",
-		"@tailwindcss/vite": "4.3.0",
-		"@types/react": "19.2.16",
-		"@types/react-dom": "19.2.3",
-		"@vercel/analytics": "1.6.1",
-		"astro": "5.18.2",
+		"@astrojs/vercel": "10.0.8",
+		"@vercel/analytics": "2.0.1",
+		"astro": "6.4.3",
 		"canvas-confetti": "1.9.4",
 		"mdast-util-to-string": "4.0.0",
 		"react": "19.2.7",
 		"react-dom": "19.2.7",
 		"reading-time": "1.5.0",
-		"rehype-pretty-code": "0.14.3",
-		"tailwindcss": "4.3.0",
-		"typescript": "5.9.3"
+		"rehype-pretty-code": "0.14.3"
 	},
 	"devDependencies": {
+		"@astrojs/check": "0.9.9",
 		"@tailwindcss/typography": "0.5.19",
+		"@tailwindcss/vite": "4.3.0",
+		"@types/react": "19.2.16",
+		"@types/react-dom": "19.2.3",
 		"prettier": "3.8.3",
 		"prettier-plugin-astro": "0.14.1",
-		"prettier-plugin-tailwindcss": "0.8.0"
+		"prettier-plugin-tailwindcss": "0.8.0",
+		"tailwindcss": "4.3.0",
+		"typescript": "6.0.3",
+		"vite": "7.3.3"
 	}
 }

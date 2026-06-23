@@ -1,10 +1,12 @@
 import { defineConfig } from 'astro/config';
+import { unified } from '@astrojs/markdown-remark';
 import { remarkReadingTime } from './src/utils/readingTime';
 import rehypePrettyCode from 'rehype-pretty-code';
 import vercelStatic from '@astrojs/vercel';
 import tailwindcss from '@tailwindcss/vite';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
+
 const options = {
 	// Specify the theme to use or a custom theme json, in our case
 	// it will be a moonlight-II theme from
@@ -35,9 +37,10 @@ export default defineConfig({
 
 	markdown: {
 		syntaxHighlight: false,
-		// Disable syntax built-in syntax hightlighting from astro
-		rehypePlugins: [[rehypePrettyCode, options]],
-		remarkPlugins: [remarkReadingTime]
+		processor: unified({
+			rehypePlugins: [[rehypePrettyCode, options]],
+			remarkPlugins: [remarkReadingTime]
+		})
 	},
 
 	integrations: [react(), sitemap()],

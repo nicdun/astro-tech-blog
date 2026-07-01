@@ -4,7 +4,7 @@ import Base from '@/layouts/Base.astro';
 import Hero from '@/components/Hero.astro';
 import LatestPosts from '@/components/LatestPosts.astro';
 import { sortPostsByDate } from '@/utils/data.util';
-import { MarkdownInstance } from 'astro';
+import type { MarkdownInstance } from 'astro';
 
 const { title } = AppConfig;
 const { description } = AppConfig;

@@ -6,7 +6,7 @@ interface Props {
 	withHref?: boolean;
 }
 
-const { tags, withHref } = Astro.props;
+const { tags, withHref = false } = Astro.props;
 ---
 
 <div class="flex flex-wrap">

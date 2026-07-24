@@ -18,8 +18,8 @@
 		"astro": "7.1.3",
 		"canvas-confetti": "1.9.4",
 		"mdast-util-to-string": "4.0.0",
-		"react": "19.2.7",
-		"react-dom": "19.2.7",
+		"react": "19.2.8",
+		"react-dom": "19.2.8",
 		"reading-time": "1.5.0",
 		"rehype-pretty-code": "0.14.4"
 	},

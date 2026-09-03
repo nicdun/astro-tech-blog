@@ -10,12 +10,12 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/react": "6.0.4",
+		"@astrojs/react": "6.0.5",
 		"@astrojs/rss": "4.0.19",
-		"@astrojs/sitemap": "3.7.3",
-		"@astrojs/vercel": "11.0.8",
+		"@astrojs/sitemap": "3.7.4",
+		"@astrojs/vercel": "11.0.9",
 		"@vercel/analytics": "2.0.1",
-		"astro": "7.2.9",
+		"astro": "7.2.10",
 		"canvas-confetti": "1.9.4",
 		"mdast-util-to-string": "4.0.0",
 		"react": "19.2.8",
@@ -25,7 +25,7 @@
 	},
 	"devDependencies": {
 		"@astrojs/check": "0.9.10",
-		"@astrojs/markdown-remark": "7.2.4",
+		"@astrojs/markdown-remark": "7.3.0",
 		"@tailwindcss/typography": "0.5.20",
 		"@tailwindcss/vite": "4.3.3",
 		"@types/react": "19.2.18",

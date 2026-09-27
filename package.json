@@ -15,7 +15,7 @@
 		"@astrojs/sitemap": "3.7.4",
 		"@astrojs/vercel": "11.0.11",
 		"@vercel/analytics": "2.0.1",
-		"astro": "7.3.4",
+		"astro": "7.3.5",
 		"canvas-confetti": "1.9.4",
 		"mdast-util-to-string": "4.0.0",
 		"react": "19.3.0",

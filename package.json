@@ -13,7 +13,7 @@
 		"@astrojs/react": "6.0.6",
 		"@astrojs/rss": "4.0.19",
 		"@astrojs/sitemap": "3.7.4",
-		"@astrojs/vercel": "11.0.13",
+		"@astrojs/vercel": "11.0.14",
 		"@vercel/analytics": "2.0.1",
 		"astro": "7.3.8",
 		"canvas-confetti": "1.9.4",

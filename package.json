@@ -10,7 +10,7 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"@astrojs/react": "6.0.6",
+		"@astrojs/react": "7.1.2",
 		"@astrojs/rss": "4.0.19",
 		"@astrojs/sitemap": "3.7.4",
 		"@astrojs/vercel": "11.0.17",
@@ -31,10 +31,10 @@
 		"@types/react": "19.3.0",
 		"@types/react-dom": "19.3.0",
 		"prettier": "3.9.10",
-		"prettier-plugin-astro": "0.14.1",
+		"prettier-plugin-astro": "1.1.2",
 		"prettier-plugin-tailwindcss": "0.8.1",
 		"tailwindcss": "4.3.3",
-		"typescript": "6.0.3",
+		"typescript": "7.0.2",
 		"vite": "8.3.5"
 	}
 }
